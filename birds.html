@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>Birds | Erie Photo Decor</title>
+        <meta name="description" content="David Nelson's professional photography career 
+spans over 30 years.
+Prior to moving back to Erie, he owned several 
+photography studios in the Detroit area.
+David earned a degree in Industrial Scientific Photography 
+from Brooks Institute of Santa Barbara California.
+He has been teaching Digital Photography at 
+Asbury Woods for the past eight years.">
+        <meta name="keywords" content="erie, photo, decor, erie photo decor, photography, portfolio, david nelson, dave nelson">       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!--        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="resources/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/style.min.css">
+                <link rel="stylesheet" href="css/slider.min.css">
+<!--        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+        
+<!--        <script src="resources/waypoints/lib/noframework.waypoints.min.js"></script>-->
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700,900" rel="stylesheet">
+<script src="js/jquery.lazyload.min.js"></script>
+        <script type="text/javascript">
+            // Fade header in
+//            function fadeOutDiv() {
+//                var a = document.getElementById("whiteDiv");
+//                a.className += " fadeOut";  
+//                setTimeout(function(){
+//                    a.className += " hide";      
+//                }, 1000);  
+//            }
+            
+            // Toggle mobile navigation menu
+            function showNav(){
+//                $("div.divNav").fadeToggle("fast");
+//                $("div.divNav").toggleClass("showNav fadeOut");
+//                $("div.deskNav").fadeToggle("fast");
+                $("div.deskNav").toggleClass("expand"); 
+                $("i.bars").toggleClass("hide");
+                $("i.times").toggleClass("show");
+   
+            }
+            
+            // Scroll to element
+            $(document).on('click', 'a[href^="#"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
+
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos}, 1000);
+            });
+ 
+            $(document).ready(function(){
+                 [].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+                // hide our element on page load
+                $('#peninsula').css('opacity', 0);
+                $('#barns').css('opacity', 0);
+                $('#country').css('opacity', 0);
+                $('#birds').css('opacity', 0);
+                $('#niagara').css('opacity', 0);
+                $('#erie').css('opacity', 0);
+                $('#contactH').css('opacity', 0);
+                $('#emailbox').css('opacity', 0);
+                $('#contactForm').css('opacity', 0);
+
+                // Trigger waypoint
+                $('#barns').waypoint(function() {
+                  $('#barns').addClass('animated fadeInUp fade2');
+                }, { offset: '90%' }); 
+                $('#country').waypoint(function() {
+                  $('#country').addClass('animated fadeInUp fade3');
+                }, { offset: '90%' }); 
+                $('#birds').waypoint(function() {
+                  $('#birds').addClass('animated fadeInUp fade4');
+                }, { offset: '90%' }); 
+                $('#peninsula').waypoint(function() {
+                  $('#peninsula').addClass('animated fadeInUp fade5');
+                }, { offset: '90%' }); 
+                $('#niagara').waypoint(function() {
+                  $('#niagara').addClass('animated fadeInUp fade5');
+                }, { offset: '90%' }); 
+                $('#erie').waypoint(function() {
+                  $('#erie').addClass('animated fadeInUp fade6');
+                }, { offset: '90%' });
+                $('#galleryH2').waypoint(function() {
+                  $('#galleryH2').toggleClass('animated fadeIn');
+                }, { offset: '100%' }); 
+                $('#contactH').waypoint(function() {
+                  $('#contactH').toggleClass('animated fadeIn');
+                }, { offset: '100%' });
+                $('#emailbox').waypoint(function() {
+                  $('#emailbox').toggleClass('animated fadeIn');
+                }, { offset: '100%' }); 
+                $('#contactForm').waypoint(function() {
+                  $('#contactForm').toggleClass('animated fadeIn');
+                }, { offset: '100%' }); 
+                
+                $('#contact').waypoint(function() {
+                  $('div.deskNav').toggleClass('clearback');
+                }, { offset: '1%' }); 
+            });
+        </script>   
+    </head>
+    <body>
+        <div class="deskNav">
+                <a href="index.html#first-slider" class="logo">EriePhotoDecor</a>
+                <a href="contact.html" class="navLink">Contact</a>
+                <a href="order.html" class="navLink">Order</a>
+                <a href="theartist.html" class="navLink">Artist</a>
+                <a href="gallery.html" class="navLink">Gallery</a>
+                <i class="fas fa-bars bars" onclick="showNav()"></i>
+                <i class="fas fa-times times" onclick="showNav()"></i>
+            <div id="mobLinks">
+                <a onclick="showNav()" href="gallery.html" class="mobLink">Gallery</a>
+                <a href="theartist.html" class="mobLink">The Artist</a>
+                <a href="order.html" class="mobLink">Order</a>
+                <a onclick="showNav()" href="contact.html" class="mobLink">Contact</a>
+            </div>
+        </div>
+
+        <div class="peninsula animated fadeIn">
+            <div style="width:100%;height:100px;"></div>
+            <h1 id="galleryH" style="margin-top:25px;margin-bottom: 50px;color:white!important">Birds</h1>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 picCol nopadding">
+<a href="images/Birds/IMG_7012L.jpg"><img data-src="images/Birds/thumbs/IMG_7012L.jpg"
+/></a>
+<a href="images/Birds/IMG_7020L.jpg"><img data-src="images/Birds/thumbs/IMG_7020L.jpg"
+/></a>
+<a href="images/Birds/IMG_7024L.jpg"><img data-src="images/Birds/thumbs/IMG_7024L.jpg"
+/></a>
+<a href="images/Birds/IMG_7025L.jpg"><img data-src="images/Birds/thumbs/IMG_7025L.jpg"
+/></a>
+<a href="images/Birds/IMG_7036L.jpg"><img data-src="images/Birds/thumbs/IMG_7036L.jpg"
+/></a>
+<a href="images/Birds/IMG_7116L.jpg"><img data-src="images/Birds/thumbs/IMG_7116L.jpg"
+/></a>
+<a href="images/Birds/IMG_7117L.jpg"><img data-src="images/Birds/thumbs/IMG_7117L.jpg"
+/></a>
+<a href="images/Birds/IMG_7118L.jpg"><img data-src="images/Birds/thumbs/IMG_7118L.jpg"
+/></a>
+<a href="images/Birds/IMG_7140L.jpg"><img data-src="images/Birds/thumbs/IMG_7140L.jpg"
+/></a>
+<a href="images/Birds/IMG_7154L.jpg"><img data-src="images/Birds/thumbs/IMG_7154L.jpg"
+/></a>
+<a href="images/Birds/IMG_7166L.jpg"><img data-src="images/Birds/thumbs/IMG_7166L.jpg"
+/></a>
+<a href="images/Birds/IMG_7168L.jpg"><img data-src="images/Birds/thumbs/IMG_7168L.jpg"
+/></a>
+<a href="images/Birds/IMG_7171L.jpg"><img data-src="images/Birds/thumbs/IMG_7171L.jpg"
+/></a>
+                    </div>
+                    <div class="col-sm-4 picCol nopadding">
+<a href="images/Birds/IMG_7173L.jpg"><img data-src="images/Birds/thumbs/IMG_7173L.jpg"
+/></a>
+<a href="images/Birds/IMG_7186L.jpg"><img data-src="images/Birds/thumbs/IMG_7186L.jpg"
+/></a>
+<a href="images/Birds/IMG_7203L.jpg"><img data-src="images/Birds/thumbs/IMG_7203L.jpg"
+/></a>
+<a href="images/Birds/IMG_7258L.jpg"><img data-src="images/Birds/thumbs/IMG_7258L.jpg"
+/></a>
+<a href="images/Birds/IMG_7266L.jpg"><img data-src="images/Birds/thumbs/IMG_7266L.jpg"
+/></a>
+<a href="images/Birds/IMG_7267L.jpg"><img data-src="images/Birds/thumbs/IMG_7267L.jpg"
+/></a>
+<a href="images/Birds/IMG_7279L.jpg"><img data-src="images/Birds/thumbs/IMG_7279L.jpg"
+/></a>
+<a href="images/Birds/IMG_7287L.jpg"><img data-src="images/Birds/thumbs/IMG_7287L.jpg"
+/></a>
+<a href="images/Birds/IMG_7300L.jpg"><img data-src="images/Birds/thumbs/IMG_7300L.jpg"
+/></a>
+<a href="images/Birds/IMG_7301L.jpg"><img data-src="images/Birds/thumbs/IMG_7301L.jpg"
+/></a>
+<a href="images/Birds/IMG_7308L.jpg"><img data-src="images/Birds/thumbs/IMG_7308L.jpg"
+/></a>
+<a href="images/Birds/IMG_7352l.jpg"><img data-src="images/Birds/thumbs/IMG_7352l.jpg"
+/></a>
+<a href="images/Birds/IMG_7358l.jpg"><img data-src="images/Birds/thumbs/IMG_7358l.jpg"
+/></a>
+                    </div>
+                    <div class="col-sm-4 picCol nopadding">
+<a href="images/Birds/IMG_7365l.jpg"><img data-src="images/Birds/thumbs/IMG_7365l.jpg"
+/></a>
+<a href="images/Birds/IMG_7396L.jpg"><img data-src="images/Birds/thumbs/IMG_7396L.jpg"
+/></a>
+<a href="images/Birds/IMG_7397L.jpg"><img data-src="images/Birds/thumbs/IMG_7397L.jpg"
+/></a>
+<a href="images/Birds/IMG_7894L.jpg"><img data-src="images/Birds/thumbs/IMG_7894L.jpg"
+/></a>
+<a href="images/Birds/IMG_8256L.jpg"><img data-src="images/Birds/thumbs/IMG_8256L.jpg"
+/></a>
+<a href="images/Birds/IMG_8262L.jpg"><img data-src="images/Birds/thumbs/IMG_8262L.jpg"
+/></a>
+<a href="images/Birds/IMG_8263L.jpg"><img data-src="images/Birds/thumbs/IMG_8263L.jpg"
+/></a>
+<a href="images/Birds/IMG_8264L.jpg"><img data-src="images/Birds/thumbs/IMG_8264L.jpg"
+/></a>
+<a href="images/Birds/IMG_8289L.jpg"><img data-src="images/Birds/thumbs/IMG_8289L.jpg"
+/></a>
+<a href="images/Birds/IMG_8290L.jpg"><img data-src="images/Birds/thumbs/IMG_8290L.jpg"
+/></a>
+<a href="images/Birds/IMG_8291L.jpg"><img data-src="images/Birds/thumbs/IMG_8291L.jpg"
+/></a>
+<a href="images/Birds/IMG_8304L.jpg"><img data-src="images/Birds/thumbs/IMG_8304L.jpg"
+/></a>
+<a href="images/Birds/IMG_8337L.jpg"><img data-src="images/Birds/thumbs/IMG_8337L.jpg"
+/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery dark" style="text-align: center;">
+            <div id="gallery" style="width:100%;height:71px;"></div>
+            <div style="width:100%;height:25px;"></div>
+            <h1 id="galleryH2" style="margin-top:25px;margin-bottom: 50px;">Gallery</h1>
+            <a href="peninsula.html"><div id="peninsula" class="box"><span>Peninsula</span></div></a>
+            <a href="barns.html"><div id="barns" class="box"><span>Barns</span></div></a>
+            <a href="country.html"><div id="country" class="box"><span>Country</span></div></a>
+            
+            <a href="niagara.html"><div id="niagara" class="box"><span>Niagara</span></div></a>
+            <a href="erie.html"><div id="erie" class="box"><span>Erie</span></div></a>
+            <div id="contactW" style="height:71px;"></div>
+        </div>
+
+    </body>  
+</html>

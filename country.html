@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>Country | Erie Photo Decor</title>
+        <meta name="description" content="David Nelson's professional photography career 
+spans over 30 years.
+Prior to moving back to Erie, he owned several 
+photography studios in the Detroit area.
+David earned a degree in Industrial Scientific Photography 
+from Brooks Institute of Santa Barbara California.
+He has been teaching Digital Photography at 
+Asbury Woods for the past eight years.">
+        <meta name="keywords" content="erie, photo, decor, erie photo decor, photography, portfolio, david nelson, dave nelson">       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!--        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="resources/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/style.min.css">
+                <link rel="stylesheet" href="css/slider.min.css">
+<!--        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+        
+<!--        <script src="resources/waypoints/lib/noframework.waypoints.min.js"></script>-->
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700,900" rel="stylesheet">
+<script src="js/jquery.lazyload.min.js"></script>
+        <script type="text/javascript">
+            // Fade header in
+//            function fadeOutDiv() {
+//                var a = document.getElementById("whiteDiv");
+//                a.className += " fadeOut";  
+//                setTimeout(function(){
+//                    a.className += " hide";      
+//                }, 1000);  
+//            }
+            
+            // Toggle mobile navigation menu
+            function showNav(){
+//                $("div.divNav").fadeToggle("fast");
+//                $("div.divNav").toggleClass("showNav fadeOut");
+//                $("div.deskNav").fadeToggle("fast");
+                $("div.deskNav").toggleClass("expand"); 
+                $("i.bars").toggleClass("hide");
+                $("i.times").toggleClass("show");
+   
+            }
+            
+            // Scroll to element
+            $(document).on('click', 'a[href^="#"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
+
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos}, 1000);
+            });
+ 
+            $(document).ready(function(){
+                 [].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+                // hide our element on page load
+                $('#peninsula').css('opacity', 0);
+                $('#barns').css('opacity', 0);
+                $('#country').css('opacity', 0);
+                $('#birds').css('opacity', 0);
+                $('#niagara').css('opacity', 0);
+                $('#erie').css('opacity', 0);
+                $('#contactH').css('opacity', 0);
+                $('#emailbox').css('opacity', 0);
+                $('#contactForm').css('opacity', 0);
+
+                // Trigger waypoint
+                $('#barns').waypoint(function() {
+                  $('#barns').addClass('animated fadeInUp fade2');
+                }, { offset: '90%' }); 
+                $('#country').waypoint(function() {
+                  $('#country').addClass('animated fadeInUp fade3');
+                }, { offset: '90%' }); 
+                $('#birds').waypoint(function() {
+                  $('#birds').addClass('animated fadeInUp fade4');
+                }, { offset: '90%' }); 
+                $('#peninsula').waypoint(function() {
+                  $('#peninsula').addClass('animated fadeInUp fade5');
+                }, { offset: '90%' }); 
+                $('#niagara').waypoint(function() {
+                  $('#niagara').addClass('animated fadeInUp fade5');
+                }, { offset: '90%' }); 
+                $('#erie').waypoint(function() {
+                  $('#erie').addClass('animated fadeInUp fade6');
+                }, { offset: '90%' }); 
+                $('#galleryH2').waypoint(function() {
+                  $('#galleryH2').toggleClass('animated fadeIn');
+                }, { offset: '100%' }); 
+                $('#contactH').waypoint(function() {
+                  $('#contactH').toggleClass('animated fadeIn');
+                }, { offset: '100%' });
+                $('#emailbox').waypoint(function() {
+                  $('#emailbox').toggleClass('animated fadeIn');
+                }, { offset: '100%' }); 
+                $('#contactForm').waypoint(function() {
+                  $('#contactForm').toggleClass('animated fadeIn');
+                }, { offset: '100%' }); 
+                
+                $('#contact').waypoint(function() {
+                  $('div.deskNav').toggleClass('clearback');
+                }, { offset: '1%' }); 
+            });
+        </script>   
+    </head>
+    <body>
+        <div class="deskNav">
+                <a href="index.html#first-slider" class="logo">EriePhotoDecor</a>
+                <a href="contact.html" class="navLink">Contact</a>
+                <a href="order.html" class="navLink">Order</a>
+                <a href="theartist.html" class="navLink">Artist</a>
+                <a href="gallery.html" class="navLink">Gallery</a>
+                <i class="fas fa-bars bars" onclick="showNav()"></i>
+                <i class="fas fa-times times" onclick="showNav()"></i>
+            <div id="mobLinks">
+                <a onclick="showNav()" href="gallery.html" class="mobLink">Gallery</a>
+                <a href="theartist.html" class="mobLink">The Artist</a>
+                <a href="order.html" class="mobLink">Order</a>
+                <a onclick="showNav()" href="contact.html" class="mobLink">Contact</a>
+            </div>
+        </div>
+
+        <div class="peninsula animated fadeIn">
+            <div style="width:100%;height:100px;"></div>
+            <h1 id="galleryH" style="margin-top:25px;margin-bottom: 50px;color:white!important">Country</h1>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 picCol nopadding">
+<a href="images/CountryScenes/IMG_0090L.jpg"><img src="images/CountryScenes/thumbs/IMG_0090L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0141L.jpg"><img src="images/CountryScenes/thumbs/IMG_0141L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0324L.jpg"><img src="images/CountryScenes/thumbs/IMG_0324L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0363L.jpg"><img src="images/CountryScenes/thumbs/IMG_0363L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0387L.jpg"><img src="images/CountryScenes/thumbs/IMG_0387L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0405L.jpg"><img src="images/CountryScenes/thumbs/IMG_0405L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0417L.jpg"><img src="images/CountryScenes/thumbs/IMG_0417L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0429L.jpg"><img src="images/CountryScenes/thumbs/IMG_0429L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0925L.jpg"><img src="images/CountryScenes/thumbs/IMG_0925L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0985L.jpg"><img src="images/CountryScenes/thumbs/IMG_0985L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0994L.jpg"><img src="images/CountryScenes/thumbs/IMG_0994L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1033L.jpg"><img src="images/CountryScenes/thumbs/IMG_1033L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1195L.jpg"><img src="images/CountryScenes/thumbs/IMG_1195L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1228L.jpg"><img src="images/CountryScenes/thumbs/IMG_1228L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1327L.jpg"><img src="images/CountryScenes/thumbs/IMG_1327L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1333L.jpg"><img src="images/CountryScenes/thumbs/IMG_1333L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1345L.jpg"><img src="images/CountryScenes/thumbs/IMG_1345L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1357L.jpg"><img src="images/CountryScenes/thumbs/IMG_1357L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1366L.jpg"><img src="images/CountryScenes/thumbs/IMG_1366L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1615L.jpg"><img src="images/CountryScenes/thumbs/IMG_1615L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1704L.jpg"><img src="images/CountryScenes/thumbs/IMG_1704L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1707L.jpg"><img src="images/CountryScenes/thumbs/IMG_1707L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1749L.jpg"><img src="images/CountryScenes/thumbs/IMG_1749L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1782L.jpg"><img src="images/CountryScenes/thumbs/IMG_1782L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1821L.jpg"><img src="images/CountryScenes/thumbs/IMG_1821L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1851L.jpg"><img src="images/CountryScenes/thumbs/IMG_1851L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1860L.jpg"><img src="images/CountryScenes/thumbs/IMG_1860L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1866L.jpg"><img src="images/CountryScenes/thumbs/IMG_1866L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1878L.jpg"><img src="images/CountryScenes/thumbs/IMG_1878L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1942L.jpg"><img src="images/CountryScenes/thumbs/IMG_1942L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1942LWC.jpg"><img src="images/CountryScenes/thumbs/IMG_1942LWC.jpg"/></a>
+<a href="images/CountryScenes/IMG_1951L.jpg"><img src="images/CountryScenes/thumbs/IMG_1951L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1972L.jpg"><img src="images/CountryScenes/thumbs/IMG_1972L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2023L.jpg"><img src="images/CountryScenes/thumbs/IMG_2023L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2041L.jpg"><img src="images/CountryScenes/thumbs/IMG_2041L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2068L.jpg"><img src="images/CountryScenes/thumbs/IMG_2068L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2122L.jpg"><img src="images/CountryScenes/thumbs/IMG_2122L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2258L.jpg"><img src="images/CountryScenes/thumbs/IMG_2258L.jpg"/></a>
+                        <a href="images/CountryScenes/IMG_2276L.jpg"><img src="images/CountryScenes/thumbs/IMG_2276L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2378L.jpg"><img src="images/CountryScenes/thumbs/IMG_2378L.jpg"/></a>
+                    </div>
+                    <div class="col-sm-4 picCol nopadding">
+
+<a href="images/CountryScenes/IMG_2432L.jpg"><img src="images/CountryScenes/thumbs/IMG_2432L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9464L.jpg"><img src="images/CountryScenes/thumbs/IMG_9464L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9476L.jpg"><img src="images/CountryScenes/thumbs/IMG_9476L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9527L.jpg"><img src="images/CountryScenes/thumbs/IMG_9527L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9539L.jpg"><img src="images/CountryScenes/thumbs/IMG_9539L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9572L_2.jpg"><img src="images/CountryScenes/thumbs/IMG_9572L_2.jpg"/></a>
+<a href="images/CountryScenes/IMG_9658L.jpg"><img src="images/CountryScenes/thumbs/IMG_9658L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9667L.jpg"><img src="images/CountryScenes/thumbs/IMG_9667L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9912L.jpg"><img src="images/CountryScenes/thumbs/IMG_9912L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9915L.jpg"><img src="images/CountryScenes/thumbs/IMG_9915L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9921L.jpg"><img src="images/CountryScenes/thumbs/IMG_9921L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9927L.jpg"><img src="images/CountryScenes/thumbs/IMG_9927L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0392L.jpg"><img src="images/CountryScenes/thumbs/IMG_0392L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0411L.jpg"><img src="images/CountryScenes/thumbs/IMG_0411L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0411LL copy.jpg"><img src="images/CountryScenes/thumbs/IMG_0411LL copy.jpg"/></a>
+<a href="images/CountryScenes/IMG_0559___2L.jpg"><img src="images/CountryScenes/thumbs/IMG_0559___2L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0361L.jpg"><img src="images/CountryScenes/thumbs/IMG_0361L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0735L.jpg"><img src="images/CountryScenes/thumbs/IMG_0735L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0841L.jpg"><img src="images/CountryScenes/thumbs/IMG_0841L.jpg"/></a>
+<a href="images/CountryScenes/IMG_0871L.jpg"><img src="images/CountryScenes/thumbs/IMG_0871L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1109L.jpg"><img src="images/CountryScenes/thumbs/IMG_1109L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1343_4_5_L.jpg"><img src="images/CountryScenes/thumbs/IMG_1343_4_5_L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1622L.jpg"><img src="images/CountryScenes/thumbs/IMG_1622L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1652L.jpg"><img src="images/CountryScenes/thumbs/IMG_1652L.jpg"/></a>
+<a href="images/CountryScenes/IMG_1727L.jpg"><img src="images/CountryScenes/thumbs/IMG_1727L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2195_7L.jpg"><img src="images/CountryScenes/thumbs/IMG_2195_7L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2231L.jpg"><img src="images/CountryScenes/thumbs/IMG_2231L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2240L.jpg"><img src="images/CountryScenes/thumbs/IMG_2240L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2665SCL.jpg"><img src="images/CountryScenes/thumbs/IMG_2665SCL.jpg"/></a>
+<a href="images/CountryScenes/IMG_2769L.jpg"><img src="images/CountryScenes/thumbs/IMG_2769L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2817L.jpg"><img src="images/CountryScenes/thumbs/IMG_2817L.jpg"/></a>
+<a href="images/CountryScenes/IMG_2910L.jpg"><img src="images/CountryScenes/thumbs/IMG_2910L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3096L.jpg"><img src="images/CountryScenes/thumbs/IMG_3096L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3117L.jpg"><img src="images/CountryScenes/thumbs/IMG_3117L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3171L.jpg"><img src="images/CountryScenes/thumbs/IMG_3171L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3189L.jpg"><img src="images/CountryScenes/thumbs/IMG_3189L.jpg"/></a>
+                        <a href="images/CountryScenes/IMG_3198L.jpg"><img src="images/CountryScenes/thumbs/IMG_3198L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3201L.jpg"><img src="images/CountryScenes/thumbs/IMG_3201L.jpg"/></a>
+                    </div>
+                    <div class="col-sm-4 picCol nopadding">
+<a href="images/CountryScenes/IMG_3204L.jpg"><img src="images/CountryScenes/thumbs/IMG_3204L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3498L.jpg"><img src="images/CountryScenes/thumbs/IMG_3498L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3504L.jpg"><img src="images/CountryScenes/thumbs/IMG_3504L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3510L.jpg"><img src="images/CountryScenes/thumbs/IMG_3510L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3932L.jpg"><img src="images/CountryScenes/thumbs/IMG_3932L.jpg"/></a>
+<a href="images/CountryScenes/IMG_3968L.jpg"><img src="images/CountryScenes/thumbs/IMG_3968L.jpg"/></a>
+<a href="images/CountryScenes/IMG_4007L.jpg"><img src="images/CountryScenes/thumbs/IMG_4007L.jpg"/></a>
+<a href="images/CountryScenes/IMG_4022L.jpg"><img src="images/CountryScenes/thumbs/IMG_4022L.jpg"/></a>
+<a href="images/CountryScenes/IMG_4559L.jpg"><img src="images/CountryScenes/thumbs/IMG_4559L.jpg"/></a>
+<a href="images/CountryScenes/IMG_4655L.jpg"><img src="images/CountryScenes/thumbs/IMG_4655L.jpg"/></a>
+<a href="images/CountryScenes/IMG_4751L.jpg"><img src="images/CountryScenes/thumbs/IMG_4751L.jpg"/></a>
+<a href="images/CountryScenes/IMG_4810L.jpg"><img src="images/CountryScenes/thumbs/IMG_4810L.jpg"/></a>
+<a href="images/CountryScenes/IMG_4909L.jpg"><img src="images/CountryScenes/thumbs/IMG_4909L.jpg"/></a>
+<a href="images/CountryScenes/IMG_4918L.jpg"><img src="images/CountryScenes/thumbs/IMG_4918L.jpg"/></a>
+<a href="images/CountryScenes/IMG_5081L.jpg"><img src="images/CountryScenes/thumbs/IMG_5081L.jpg"/></a>
+<a href="images/CountryScenes/IMG_5233L.jpg"><img src="images/CountryScenes/thumbs/IMG_5233L.jpg"/></a>
+<a href="images/CountryScenes/IMG_5362L.jpg"><img src="images/CountryScenes/thumbs/IMG_5362L.jpg"/></a>
+<a href="images/CountryScenes/IMG_5898 L.jpg"><img src="images/CountryScenes/thumbs/IMG_5898 L.jpg"/></a>
+<a href="images/CountryScenes/IMG_5901L.jpg"><img src="images/CountryScenes/thumbs/IMG_5901L.jpg"/></a>
+<a href="images/CountryScenes/IMG_6032L.jpg"><img src="images/CountryScenes/thumbs/IMG_6032L.jpg"/></a>
+<a href="images/CountryScenes/IMG_6345L.jpg"><img src="images/CountryScenes/thumbs/IMG_6345L.jpg"/></a>
+<a href="images/CountryScenes/IMG_6384L.jpg"><img src="images/CountryScenes/thumbs/IMG_6384L.jpg"/></a>
+<a href="images/CountryScenes/IMG_6421L.jpg"><img src="images/CountryScenes/thumbs/IMG_6421L.jpg"/></a>
+<a href="images/CountryScenes/IMG_6892L.jpg"><img src="images/CountryScenes/thumbs/IMG_6892L.jpg"/></a>
+<a href="images/CountryScenes/IMG_6927 - Version 15L.jpg"><img src="images/CountryScenes/thumbs/IMG_6927 - Version 15L.jpg"/></a>
+<a href="images/CountryScenes/IMG_7240L.jpg"><img src="images/CountryScenes/thumbs/IMG_7240L.jpg"/></a>
+<a href="images/CountryScenes/IMG_7526L.jpg"><img src="images/CountryScenes/thumbs/IMG_7526L.jpg"/></a>
+<a href="images/CountryScenes/IMG_7546L.jpg"><img src="images/CountryScenes/thumbs/IMG_7546L.jpg"/></a>
+<a href="images/CountryScenes/IMG_7610L.jpg"><img src="images/CountryScenes/thumbs/IMG_7610L.jpg"/></a>
+<a href="images/CountryScenes/IMG_7739L.jpg"><img src="images/CountryScenes/thumbs/IMG_7739L.jpg"/></a>
+<a href="images/CountryScenes/IMG_8739___2L.jpg"><img src="images/CountryScenes/thumbs/IMG_8739___2L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9240_1_2L.jpg"><img src="images/CountryScenes/thumbs/IMG_9240_1_2L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9246_7_8L.jpg"><img src="images/CountryScenes/thumbs/IMG_9246_7_8L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9353_2L.jpg"><img src="images/CountryScenes/thumbs/IMG_9353_2L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9730L.jpg"><img src="images/CountryScenes/thumbs/IMG_9730L.jpg"/></a>
+<a href="images/CountryScenes/IMG_9837L.jpg"><img src="images/CountryScenes/thumbs/IMG_9837L.jpg"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="gallery dark" style="text-align: center;">
+            <div id="gallery" style="width:100%;height:71px;"></div>
+            <div style="width:100%;height:25px;"></div>
+            <h1 id="galleryH2" style="margin-top:25px;margin-bottom: 50px;">Gallery</h1>
+            <a href="peninsula.html"><div id="peninsula" class="box"><span>Peninsula</span></div></a>
+            <a href="barns.html"><div id="barns" class="box"><span>Barns</span></div></a>
+            <a href="birds.html"><div id="birds" class="box"><span>Birds</span></div></a>
+            <a href="niagara.html"><div id="niagara" class="box"><span>Niagara</span></div></a>
+            <a href="erie.html"><div id="erie" class="box"><span>Erie</span></div></a>
+            <div id="contactW" style="height:71px;"></div>
+        </div>
+
+    </body>  
+</html>

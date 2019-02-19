@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>Erie Photo Decor | Erie, PA</title>
+        <meta name="description" content="David Nelson's professional photography career 
+spans over 30 years.
+Prior to moving back to Erie, he owned several 
+photography studios in the Detroit area.
+David earned a degree in Industrial Scientific Photography 
+from Brooks Institute of Santa Barbara California.
+He has been teaching Digital Photography at 
+Asbury Woods for the past eight years.">
+        <meta name="keywords" content="erie, photo, decor, erie photo decor, photography, portfolio, david nelson, dave nelson">       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!--        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="resources/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/style.min.css">
+                <link rel="stylesheet" href="css/slider.min.css">
+<!--        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+        
+<!--        <script src="resources/waypoints/lib/noframework.waypoints.min.js"></script>-->
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700,900" rel="stylesheet">
+
+        <script type="text/javascript">
+            // Fade header in
+//            function fadeOutDiv() {
+//                var a = document.getElementById("whiteDiv");
+//                a.className += " fadeOut";  
+//                setTimeout(function(){
+//                    a.className += " hide";      
+//                }, 1000);  
+//            }
+            
+            // Toggle mobile navigation menu
+            function showNav(){
+//                $("div.divNav").fadeToggle("fast");
+//                $("div.divNav").toggleClass("showNav fadeOut");
+//                $("div.deskNav").fadeToggle("fast");
+                $("div.deskNav").toggleClass("expand"); 
+                $("i.bars").toggleClass("hide");
+                $("i.times").toggleClass("show");
+   
+            }
+            
+            // Scroll to element
+            $(document).on('click', 'a[href^="#"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
+
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos}, 1000);
+            });
+ 
+            $(document).ready(function(){
+ 
+                // hide our element on page load
+                $('#peninsula').css('opacity', 0);
+                $('#barns').css('opacity', 0);
+                $('#country').css('opacity', 0);
+                $('#birds').css('opacity', 0);
+                $('#niagara').css('opacity', 0);
+                $('#erie').css('opacity', 0);
+                $('#galleryH').css('opacity', 0);
+                $('#contactH').css('opacity', 0);
+                $('#emailbox').css('opacity', 0);
+                $('#contactForm').css('opacity', 0);
+
+                // Trigger waypoint
+                $('#peninsula').waypoint(function() {
+                  $('#peninsula').addClass('animated fadeInUp fade1');
+                  $('div.deskNav').toggleClass('darker');
+                }, { offset: '90%' }); 
+                $('#barns').waypoint(function() {
+                  $('#barns').addClass('animated fadeInUp fade2');
+                }, { offset: '90%' }); 
+                $('#country').waypoint(function() {
+                  $('#country').addClass('animated fadeInUp fade3');
+                }, { offset: '90%' }); 
+                $('#birds').waypoint(function() {
+                  $('#birds').addClass('animated fadeInUp fade4');
+                }, { offset: '90%' }); 
+                $('#niagara').waypoint(function() {
+                  $('#niagara').addClass('animated fadeInUp fade5');
+                }, { offset: '90%' }); 
+                $('#erie').waypoint(function() {
+                  $('#erie').addClass('animated fadeInUp fade6');
+                }, { offset: '90%' }); 
+                $('#galleryH').waypoint(function() {
+                  $('#galleryH').toggleClass('animated fadeIn');
+                }, { offset: '100%' }); 
+                $('#contactH').waypoint(function() {
+                  $('#contactH').toggleClass('animated fadeIn');
+                }, { offset: '100%' });
+                $('#emailbox').waypoint(function() {
+                  $('#emailbox').toggleClass('animated fadeIn');
+                }, { offset: '100%' }); 
+                $('#contactForm').waypoint(function() {
+                  $('#contactForm').toggleClass('animated fadeIn');
+                }, { offset: '100%' }); 
+                
+                $('#contact').waypoint(function() {
+                  $('div.deskNav').toggleClass('clearback');
+                }, { offset: '1%' }); 
+            });
+        </script>  
+        
+    </head>
+    <body class="animated fadeIn">
+        <div class="deskNav">
+                <a href="index.html#first-slider" class="logo">EriePhotoDecor</a>
+                <a href="#contactB" class="navLink">Contact</a>
+                <a href="order.html" class="navLink">Order</a>
+                <a href="theartist.html" class="navLink">Artist</a>
+                <a href="#gallery" class="navLink">Gallery</a>
+                <i class="fas fa-bars bars" onclick="showNav()"></i>
+                <i class="fas fa-times times" onclick="showNav()"></i>
+            <div id="mobLinks">
+                <a onclick="showNav()" href="#gallery" class="mobLink">Gallery</a>
+                <a href="theartist.html" class="mobLink">The Artist</a>
+                <a href="order.html" class="mobLink">Order</a>
+                <a onclick="showNav()" href="#contactB" class="mobLink">Contact</a>
+            </div>
+        </div>
+<!--
+        <div class="home">
+        
+        </div>
+-->
+          <div id="first-slider" class="">
+    <div id="carousel-example-generic" class="carousel slide carousel-fade">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5" class=""></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <!-- Item 1 -->
+                <div class="item slide1 active">
+                    <a href="peninsula.html" class="slideBTNnew">Peninsula Gallery <i class="fa fa-arrow-right"></i></a>
+<!--
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-3 text-right">
+                            <img style="max-width: 200px;" data-animation="animated zoomInLeft" src="http://eriephotodecor.com/images/Erie/IMG_6697L.jpg"
+                            class="">
+                        </div>
+                        <div class="col-md-9 text-left">
+                             <h3 data-animation="animated bounceInDown" class="">Add images, or even your logo!</h3>
+
+                             <h4 data-animation="animated bounceInUp" class="">Easily use stunning effects</h4> 
+                        </div>
+                    </div>
+                </div>
+-->
+            </div>
+            <!-- Item 2 -->
+            <div class="item slide2">
+                <a href="barns.html" class="slideBTNnew">Barns Gallery <i class="fa fa-arrow-right"></i></a>
+<!--
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-7 text-left">
+                             <h3 data-animation="animated bounceInDown" class=""> 50 animation options A beautiful</h3>
+
+                             <h4 data-animation="animated bounceInUp" class="">Create beautiful slideshows </h4>
+
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <img style="max-width: 200px;" data-animation="animated zoomInLeft" src="http://eriephotodecor.com/images/Barns/IMG_9729L.jpg"
+                            class="">
+                        </div>
+                    </div>
+                </div>
+-->
+            </div>
+            <!-- Item 3 -->
+            <div class="item slide3">
+                <a href="country.html" class="slideBTNnew">Country Gallery <i class="fa fa-arrow-right"></i></a>
+<!--
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-7 text-left">
+                             <h3 data-animation="animated bounceInDown" class="">Simple Bootstrap Carousel</h3>
+
+                             <h4 data-animation="animated bounceInUp" class="">Bootstrap Image Carousel Slider with Animate.css</h4>
+
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <img style="max-width: 200px;" data-animation="animated zoomInLeft" src="http://eriephotodecor.com/images/Peninsula/IMG_4308L.jpg"
+                            class="">
+                        </div>
+                    </div>
+                </div>
+-->
+            </div>
+            <div class="item slide4"><a href="birds.html" class="slideBTNnew">Birds Gallery <i class="fa fa-arrow-right"></i></a></div>
+            <div class="item slide5"><a href="niagara.html" class="slideBTNnew">Niagara Gallery <i class="fa fa-arrow-right"></i></a></div>
+            <div class="item slide6"><a href="erie.html" class="slideBTNnew">Erie Gallery <i class="fa fa-arrow-right"></i></a></div>
+            <!-- Item 4 -->
+<!--
+            <div class="item slide4">
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-7 text-left">
+                             <h3 data-animation="animated bounceInDown" class="">We are creative</h3>
+
+                             <h4 data-animation="animated bounceInUp" class="">Get start your next awesome project</h4>
+
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <img style="max-width: 200px;" data-animation="animated zoomInLeft" src="https://s20.postimg.org/9vf8xngel/internet_speed.png"
+                            class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+            <!-- End Item 4 -->
+        </div>
+        <!-- End Wrapper for slides--> <a class="left carousel-control" href="#carousel-example-generic" role="button"
+        data-slide="prev">
+            <i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
+        </a>
+ <a class="right carousel-control" href="#carousel-example-generic"
+        role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
+        </a>
+
+    </div>
+</div>
+    <script src="js/index.min.js"></script>    
+        
+<!--
+        <link rel="stylesheet" href="css/slider.min.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+        <script  src="js/index.js"></script>
+-->
+        
+        <div class="gallery" style="text-align: center;">
+            <div id="gallery" style="width:100%;height:71px;"></div>
+            <div style="width:100%;height:25px;"></div>
+            <h1 id="galleryH" style="margin-top:25px;margin-bottom: 50px;">Gallery</h1>
+            <a href="peninsula.html"><div id="peninsula" class="box"><span>Peninsula</span></div></a>
+            <a href="barns.html"><div id="barns" class="box"><span>Barns</span></div></a>
+            <a href="country.html"><div id="country" class="box"><span>Country</span></div></a>
+            <a href="birds.html"><div id="birds" class="box"><span>Birds</span></div></a>
+            <a href="niagara.html"><div id="niagara" class="box"><span>Niagara</span></div></a>
+            <a href="erie.html"><div id="erie" class="box"><span>Erie</span></div></a>
+            <div id="contactW" style="height:71px;"></div>
+        </div>
+        <div id="contact" class="contact">
+            <div id="contactB" style="width:100%;left:0px;height:71px;"></div>
+            
+            <div class="container">
+                
+                <div class="row">
+                    
+                    <div style="width:100%;height:25px;"></div>
+                    <h1 id="contactH">Contact</h1>
+                    <hr style="margin-left:15px;margin-right:15px;">
+                    <div id="emailbox" class="col-md-5">
+                        <span id="emailtext">Send an email to:</span>
+                        <span id="email">dpauln@gmail.com</span>
+                    </div>
+                    <div id="orText" class="col-md-2">
+                        <div id="orBuff"></div>
+                        OR
+                    </div>
+                    <div class="col-md-5">
+                        <form id="contactForm" data-forge-name="EriePhotoDecor" style="text-align: center">
+                            <div class="form-group">
+                                <label for="first">Name</label>
+                                <input type="text" data-forge-name="Name" class="form-control" id="first" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" data-forge-name="Email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="des">Comments/Questions</label>
+                                <textarea data-forge-name="Comments" class="form-control" id="des" rows="4"></textarea>
+                            </div>
+
+                            <input id="contactBTN" type="submit" value="Send">    
+                        </form>
+<!--
+                        <script src='https://www.google.com/recaptcha/api.js'></script>
+                          <script src="https://www.google.com/recaptcha/api.js?render=6LcVX2kUAAAAAKgXXw3VuwE5eBBLUgVozn1U40SL"></script>
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6LcVX2kUAAAAAKgXXw3VuwE5eBBLUgVozn1U40SL', {action: 'homepage'}).then(function(token) {
+      });
+  });
+  </script>
+-->
+                    </div>
+                    
+                </div>
+                <hr>
+            </div>
+        </div>
+    </body>  
+</html>

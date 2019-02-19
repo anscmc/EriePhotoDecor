@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>Erie Photo Decor | Erie, PA</title>
+        <meta name="description" content="David Nelson's professional photography career 
+spans over 30 years.
+Prior to moving back to Erie, he owned several 
+photography studios in the Detroit area.
+David earned a degree in Industrial Scientific Photography 
+from Brooks Institute of Santa Barbara California.
+He has been teaching Digital Photography at 
+Asbury Woods for the past eight years.">
+        <meta name="keywords" content="erie, photo, decor, erie photo decor, photography, portfolio, david nelson, dave nelson">       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!--        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="resources/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/style.min.css">
+                <link rel="stylesheet" href="css/slider.min.css">
+<!--        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+        
+<!--        <script src="resources/waypoints/lib/noframework.waypoints.min.js"></script>-->
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700,900" rel="stylesheet">
+
+        <script type="text/javascript">
+            // Fade header in
+//            function fadeOutDiv() {
+//                var a = document.getElementById("whiteDiv");
+//                a.className += " fadeOut";  
+//                setTimeout(function(){
+//                    a.className += " hide";      
+//                }, 1000);  
+//            }
+            
+            // Toggle mobile navigation menu
+            function showNav(){
+//                $("div.divNav").fadeToggle("fast");
+//                $("div.divNav").toggleClass("showNav fadeOut");
+//                $("div.deskNav").fadeToggle("fast");
+                $("div.deskNav").toggleClass("expand"); 
+                $("i.bars").toggleClass("hide");
+                $("i.times").toggleClass("show");
+   
+            }
+            
+            // Scroll to element
+            $(document).on('click', 'a[href^="#"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
+
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos}, 1000);
+            });
+ 
+
+        </script>   
+    </head>
+    <body style="background-color:black!important;">
+        <div class="deskNav">
+                <a href="index.html#first-slider" class="logo">EriePhotoDecor</a>
+                <a href="contact.html" class="navLink">Contact</a>
+                <a href="order.html" class="navLink">Order</a>
+                <a href="theartist.html" class="navLink">Artist</a>
+                <a href="gallery.html" class="navLink">Gallery</a>
+                <i class="fas fa-bars bars" onclick="showNav()"></i>
+                <i class="fas fa-times times" onclick="showNav()"></i>
+            <div id="mobLinks">
+                <a onclick="showNav()" href="gallery.html" class="mobLink">Gallery</a>
+                <a href="theartist.html" class="mobLink">The Artist</a>
+                <a href="order.html" class="mobLink">Order</a>
+                <a onclick="showNav()" href="contact.html" class="mobLink">Contact</a>
+            </div>
+        </div>
+
+        <div id="contact" class="contact animated fadeIn">
+            <div id="contactB" style="width:100%;left:0px;height:71px;"></div>
+            
+            <div class="container">
+                
+                <div class="row">
+                    
+                    <div style="width:100%;height:25px;"></div>
+                    <h1 id="contactH">Order Form</h1>
+                    <hr>
+                    <div id="emailbox" class="col-md-5">
+                        <span id="emailtext">Send an email to:</span>
+                        <span id="email">dpauln@gmail.com</span>
+                    </div>
+                    <div id="orText" class="col-md-2">
+                        <div id="orBuff"></div>
+                        OR
+                    </div>
+                    <div class="col-md-5">
+                        <form id="contactForm" data-forge-name="Order" style="text-align: center">
+                            <div class="form-group">
+                                <label for="first">Name</label>
+                                <input type="text" data-forge-name="Name" class="form-control" id="first" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" data-forge-name="Email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" data-forge-name="Phone" class="form-control" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="des">What would you like to order?</label>
+                                <textarea data-forge-name="Comments" class="form-control" id="des" rows="4"></textarea>
+                            </div>
+                            <input id="contactBTN" type="submit" value="Send">    
+                        </form>
+                    </div>
+                    
+                </div>
+                <hr>
+            </div>
+        </div>
+    </body>  
+</html>
